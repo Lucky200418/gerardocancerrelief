@@ -1,0 +1,218 @@
+.textPrimaryColor {
+  color: #6a0dad;
+}
+
+.backgroundColor {
+  background-color: #6a0dad;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.btn-primaryColor {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.btn-donate {
+  background-color: white; /* White background */
+  color: #460674; /* Text color, adjust as needed */
+  border: 2px solid #6a0dad; /* Border color to match the text color */
+  padding: 10px 20px; /* Padding for spacing */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 8rem;
+  margin-left: 1.1rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+  animation: scale-up 1.5s infinite;
+}
+
+.btn-donate:hover {
+  background-color: #6a0dad; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-color: #6a0dad; /* Border color on hover */
+}
+
+.btn-donate:focus {
+  outline: none; /* Remove default outline on focus */
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.4); /* Scale up */
+  }
+  100% {
+    transform: scale(1); /* Return to original scale */
+  }
+}
+
+/* **************DONATE SECTION********************* */
+.donate-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.donate-header .section-title {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.donate-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.donate-details {
+  flex: 1 1 45%;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.donate-details .donate-subtitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #6a0dad; /* Adjust this color to match your brand */
+}
+
+.donate-details p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.impact-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.impact-list li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.donate-form {
+  flex: 1 1 45%;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #f3f3f3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donation-options {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.donate-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.donate-button {
+  display: block;
+  padding: 15px 20px;
+  background-color: #6a0dad;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #45a049;
+}
+
+.donateDetailsStep {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .donate-details,
+  .donate-form {
+    flex: 1 1 100%;
+    padding: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .donate-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-header .section-title {
+    font-size: 2.2em;
+  }
+
+  .section-description {
+    font-size: 1em;
+  }
+
+  .donate-details .donate-subtitle,
+  .donate-form .donate-subtitle {
+    font-size: 1.6em;
+  }
+
+  .donate-details p,
+  .donation-options {
+    font-size: 1em;
+  }
+
+  .donate-button {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-header .section-title {
+    font-size: 1.8em;
+  }
+
+  .section-description {
+    font-size: 0.9em;
+  }
+
+  .donate-details .donate-subtitle,
+  .donate-form .donate-subtitle {
+    font-size: 1.4em;
+  }
+
+  .donate-button {
+    padding: 12px 16px;
+    font-size: 1em;
+  }
+}
+
+/* **************DONATE SECTION********************* */
