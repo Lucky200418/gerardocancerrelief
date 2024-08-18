@@ -529,3 +529,18 @@
 .footer .copyright a:hover {
   color: var(--primary);
 }
+
+.volunteerOptions {
+  display: flex;
+  flex-direction: column !important;
+}
+@media (max-width: 480px) {
+  .logoImg {
+    width: 3rem;
+  }
+
+  .joinUsDetails {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
